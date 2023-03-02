@@ -1,0 +1,147 @@
+
+header {
+    background: url("../image/items/wall1.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    height: 500px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Grandstander", cursive;
+    color: #272323;
+}
+
+
+html  {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Grandstander;
+    font-size: 25px;
+    color: #272323;
+}
+
+.showcase-img {
+    background-size: cover;
+    min-height: 50rem;
+}
+
+.showcase-text {
+    padding: 8rem;
+}
+
+
+
+.a {
+    color: #272323;
+}
+
+
+.features-icons {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.features-icons-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00cc99;
+}
+
+.txt-white {
+    color: #FAF7F0;
+}
+
+.menubar {
+    background-color: #98A8F8;
+}
+
+.navbar1 {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.bgGreen{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.textJustify{
+    text-align: justify;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+/* CSS แต่ละขนาดหน้าจอ */
+@media (min-width: 1400px) {
+    /* xxl */
+    #row1 {
+        background-position:center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    /* xl */
+    #row1 {
+        background-color: #FBDA61;
+        background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* lg */
+    row1 {
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* md */
+    #row1 {
+        background-color: #FFE53B;
+        background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    }
+}
+
+@media (max-width: 767px) {
+    /* sm */
+    #row1 {
+        background-color: #FA8BFF;
+        background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    }
+}
