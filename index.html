@@ -1,153 +1,380 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Profile</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <title>Profile</title>
+
+    <!-- Favicons -->
+    <link href="image/icons/map%20(2).png" rel="icon">
+    <link href="image/icons/map%20(1).png" rel="apple-touch-icon">
+
     <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style2.css" media="screen">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Contact Section -->
-<div class="w3-top">
-    <div class=" w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-        <a href="#home" class="w3-bar-item w3-button">Portfolio</a>
+    <!-- Menu Section -->
+    <nav class="navbar menubar  navbar-expand-lg navbar-light shadow-sm">
+        <div class="container-fluid container-md">
+            <a class="navbar-brand fw-bold" href="#Home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
 
-        <div class="w3-right w3-hide-small">
-            <a href="#Contact" class="w3-bar-item w3-button">Contact</a>
-            <a href="#About" class="w3-bar-item w3-button">About</a>
-            <a href="#Activities" class="w3-bar-item w3-button">Activities</a>
-        </div>
-    </div>
-</div>
+                    <!-- Contact Section -->
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
 
+                    <!-- About Section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
 
+                    <!-- UTxO Model Section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#UTxO">UTxO Model</a>
+                    </li>
 
-
-<!-- Header -->
-<header class="col-md w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-    <hr>
-
-    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-        <h1 class="w3-xxlarge">Le Catering</h1>
-    </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-
-    <div class="w3-container w3-padding-64" id="Contact">
-        <div>
-            <h1>Contact</h1><br>
-            <h3><i class="fa-solid fa-envelope"></i> ph.watcharapol_st@tni.ac.th</h3>
-            <h3><i class="fa-solid fa-street-view"></i> Street Avenue 90</h3>
-            <h3><i class="fa-solid fa-phone"></i> + 09-8209-283-038</h3>
-
-            <h3 class="fs-3 fw-bold my-2"><a href="https://github.com/rushmi0" target="_blank"> <i class="fa-brands fa-md fa-github ms-2"></i> GitHub</a></h3>
-        </div>
-
-    </div>
-
-    <hr>
-
-    <!-- About -->
-    <div class="textJustify container-md" id="About">
-        <div class="row mt-2">
-
-            <div class="mt-3 p-2 textJustify container-md col-md-6">
-                <img src="image/mepp.jpg"
-                     class="img-fluid rounded mb-3"
-                     style="max-width:400px;min-width:300px">
-            </div>
-
-            <div class="w3-col m6 w3-padding-large">
-                <h1 class="w3-center w3-col">About</h1><br>
-                <p class="w3-large">
-                    สวัสดีครับ ผมวัชรพล พงษ์วิลัย เป็นนักศึกษาคณะ IT สาขา IT ปี3 นะครับ
-                </p>
-
-                <p class="mt-3 p-2 textJustify container-md col-md-6">
-                    ผมชื่นชอบประวัติศาสตร์การเงิน เศรษฐศาสตร์ สำนักออสเตรียน
-                    มันทำให้ผมตื่นรู้ผู้คนในสังคมต่างเป็นทาสของระบบ และผู้ที่ความคุมระบบนั้น คือผู้ที่มีอำนวจควบคุมเงิน
-                    (Fiat Money)
-                </p>
-
+                    <!-- Activities Section -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Activities">Activities</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-
-    <hr>
+    </nav>
 
 
-    <!-- Activities -->
-    <div class="w3-row w3-padding-64" id="Activities">
-        <div>
-            <h1 class="w3-center">Activities</h1><br>
+    <!-- Header -->
+    <header class="text-center ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
 
-            <div>
-                <div>
-                    <h2 class="fs-3 fw-bold my-2 "><a href="#Bit-Entropy"></a><b>Bit-Entropy</b></h2>
-                    <h3 class="fs-3 fw-bold my-2"><a href="https://github.com/rushmi0/Bit-Entropy" target="_blank"> <i
-                            class="fa-brands fa-md fa-github ms-2"></i> https://github.com/rushmi0/Bit-Entropy</a></h3>
+                    <div class="p-5 mt-3 rounded-3">
+                        <div class="col-md-7 mx-auto"> <!-- offset-md-4, mx-auto -->
+                            <h1 class="fw-bold">Contact</h1>
+                            <div class="mt-4 md-3 fs-4">
 
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <!-- Content -->
+                                <div class="container-md" id="Contact">
+                                    <div>
 
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <h3>
+                                            <i class="fa-solid fa-user-secret"></i> Watcharapol Phongwilai
+                                        </h3>
+
+                                        <h3>
+                                            <i class="fa-solid fa-street-view"></i> Street Avenue 90
+                                        </h3>
+
+                                        <h3 class="fs-3 fw-bold my-2">
+                                            <a class="a" href="https://www.instagram.com/rushmi0" target="_blank"> <i class="fa-brands fa-instagram"></i> rushmi0</a>
+                                        </h3>
+
+                                        <h3 class="fs-3 fw-bold my-2">
+                                            <a class="a" href="https://github.com/rushmi0" target="_blank"> <i class="fa-brands fa-md fa-github ms-2"></i> GitHub</a>
+                                        </h3>
+
+                                    </div>
+                                </div>
+
+                            </div> <!-- End Content -->
+                        </div>
+                    </div> <!-- row1 -->
+
+                    <!-- I'm UX/UI Designer, Web Developer, Bitcoin Developer -->
+
+                    <!-- <h1 class="mb-5">Hi..</h1>
+                    <p>I'm Watcharapol Phongwilai<span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+                    -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Icons -->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-3">
+
+                        <div class="features-icons-icon">
+                            <img src="image/icons/github64px.png" class="img-fluid rounded">
                         </div>
 
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="image/Desktop_1.svg" class="d-block w-100" >
-                            </div>
-                            <div class="carousel-item">
-                                <img src="image/Desktop_1.svg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="image/Desktop_1.svg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
+                        <h3><a class="a" href="https://github.com/rushmi0" target="_blank">GitHub</a></h3>
+                        <p>
+                            อุ้ อุ้ อ๊า อ๊า อุก่ะ อุก่ะ
+                            rushmi0
+                        </p>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
-
-                    <br>
                 </div>
 
-                <h2 class="fs-3 fw-bold my-2 "><a href="#SecureKey"></a><b>SecureKey</b></h2>
-                <h3 class="fs-3 fw-bold my-2"><a href="https://github.com/rushmi0/SecureKey" target="_blank"> <i
-                        class="fa-brands fa-md fa-github ms-2"></i> https://github.com/rushmi0/SecureKey</a></h3>
 
-                <h2 class="fs-3 fw-bold my-2 "><a href="#BitHive"></a><b>BitHive</b></h2>
-                <h3 class="fs-3 fw-bold my-2"><a href="https://github.com/rushmi0/BitHive" target="_blank"> <i
-                        class="fa-brands fa-md fa-github ms-2"></i> https://github.com/rushmi0/BitHive</a></h3>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-3">
+
+                        <div class="features-icons-icon">
+                            <img src="image/icons/email.png" class="img-fluid rounded">
+                        </div>
+
+                        <h3>Email</h3>
+                        <p>ph.watcharapol_st@tni.ac.th</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-3">
+
+                        <div class="features-icons-icon">
+                            <img src="image/icons/phone-call.png" class="img-fluid rounded">
+                        </div>
+
+                        <h3>Phone Number</h3>
+                        <a>+ 09-8209-283-038</a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-    </div>
-
-    <hr>
+    </section>
 
 
-</div> <!-- End page content -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- About -->
+    <br>
+    <!-- <h1 align="center" class="mt-5">About</h1> -->
+    <section class="showcase" id="About">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <!--style="background-image: url('image/PicsArt.jpg')"-->
+                <div class="col-lg-6 order-lg-2 text-white showcase-img">
+                    <img src="image/items/ts2.jpg" class="img-fluid rounded">
+                </div>
+                <!-- Text block -->
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h3>ผู้คนในสังคมต่างเป็นทาสของระบบ และผู้ที่ความคุมระบบนั้น คือผู้ที่มีอำนวจควบคุมเงิน</h3>
+
+                    <br>
+
+                    <p class="lead mb-0">
+                        ผมเริ่มชื่นชอบประวัติศาสตร์, เศรษฐศาสตร์(สำนักออสเตรียน)
+                        มันเป็นจุดเริ่มต้นที่ทำให้ผมตื่นรู้ความเป็นจริงอันบัดเบี้ยวของโลกนี้ ที่คน 99%
+                        ในโลกยังไม่ตื่นรู้
+                    </p>
+
+                    <br>
+
+                    <h3>ในยุคแรกมนุษย์เราใช้กำลังในการควบคุมคน</h3>
+                    <br>
+
+                    <p class="lead mb-0">
+                         ใช้แซ่หรือหวายโบยทาสทั้งหลาย ให้มันทำงานตามที่เราสั่ง เราใช้ดาบ ใช้ปืน ใช้อาวุธ ในการควบคุมคน
+                    </p>
+
+                    <br>
+
+                    <p class="lead mb-0">
+                        ในยุคถัดมาเมื่อประเทศมีความช่ำชองการควบคุมคนมากยิ่งขึ้น เราเริ่มใช้ "กฎหมาย" ..
+                        กฎหมายนั้นถูกใช้ในการควบคุมคน กดขี้ชนชั้นต่าง ๆ แบ่งธุรกิจรายย่อย รายใหญ่ออกมาได้อย่างชัดเจน
+
+                    </p>
+
+                    <br>
+                    <p class="lead mb-0">
+                        "กฎหมาย" กลายเป็นโซ่ตรวนที่ควบคุม การเติบโตธุรกิจจำนวนมาก และเทคโนโลยีการความคุมคนมันพัฒนาขึ้นมาเรื่อย ๆ
+                    </p>
+
+                    <br>
+                    <p class="lead mb-0">
+                        จนมาถึงปัจจุบันเรามาใช้เงิน โดยเฉพาะอย่างยิ่ง นโยบายทางการเงิน เป็นเครื่องมือที่ใช้ในการควบคุม
+                        "มนุษย์" ได้ดีที่สุด ... มันมีวิธีทีไหนที่เราจะควบคุมมนุษย์ให้เป็นทาส
+                    </p>
+
+                    <br>
+                    <p class="lead mb-0">
+                        ในยุคสมัยที่ทุกคนเชื่อว่าตนเองมีสิทธิเสรีภาพ ได้ดีกว่าการทำให้เงินที่เขาหามาได้ด้วยความยากลำบาก
+                        มันสามารถระเหยได้ทุกวินาที (โคตรเจ๋ง) คนทำงานหาเงินมาแทบตายเงิรมันระเหยได้ นั้นแปลว่า
+                        "ไอ้โง่นั้นมันต้องทำงานต่อไปเรื่อย ๆ"
+                    </p>
+
+                    <br>
+                    <p class="lead mb-0">
+                        ทำงานต่อไปเรื่อย ๆ โดยที่มันจะไม่มีวัน ที่มันจะมีเงินเก็บพอที่จะ
+                        ปลดตัวเองออกจากระบบการเป็นทาสนี้ได้ เทคโนโลยีการควบคุมมันเปลี่ยนแปลงไป
+                        และทุกวันนี้นโยบายทางการเงิน ก็ยังถูกใช้ในการควบคุม
+                    </p>
+
+                    <br>
+                    <p class="lead mb-0">
+                        การครอบงำทางการเงินก็เป็นการควบคุม ตัดขาประเทศต่าง ๆ การใช้ "การคว่ำบาตร"
+                        เทคโนโลยีการควมคุมในปัจจุบันมัน เจ๋งมาก ๆ เลยครับ และต่าง ๆ ก็ Upgrade เงินของพวกเขากลายเป็น CBDC
+                        เทคโนโลยีการควมคุมอย่างสมบูรณ์แบบ ที่กำลังจะมา
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <h1 align="center" class="mt-5">UTxO คืออะไร</h1><br>
+    <section class="showcase" id="UTxO">
+        <div class="container-fluid p-0">
+
+            <!-- page 1 -->
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-1 text-white showcase-img">
+                    <img src="image/UTxO/ts0.jpg" class="img-fluid rounded">
+                </div>
+                <!-- Text block -->
+                <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+                    <h2>Bitcoin ใช้รูปแบบการจดบัญชีโดยการใช้ UTxO Model</h2>
+                    <br>
+                    <p class="lead mb-0">
+                        UTxO (Unspent Transaction Output) คือ เงินที่เรามีอยู่ แต่เรายังไม่ได้ใช้จ่ายเงินนั้นออกไป
+                    </p>
+
+                    <br> <!-- เว้นบรรทัด -->
+
+                    <p class="lead mb-0">
+                        Output ของ UTxO หนึ่งเป็นการใช้จ่ายออกไปของคนหนึ่ง แล้วการใช้จ่ายของคนนั้น
+                        จะกลายเป็นรายรับของอีกคนหรือเป็น Input ของอีก UTxO ต่อไป
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- page 2 -->
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img">
+                    <img src="image/UTxO/ts1.jpg" class="img-fluid rounded">
+                </div>
+                <!-- Text block -->
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>ยกตัวอย่างง่าย ๆ ให้เห็นว่ามันเป็นยังไง</h2>
+                    <br>
+                    <p class="lead mb-0">
+                        ฟ้ามีเงินอยู่ 1 BTC .. ต้องการจะโอนเงินให้ส้ม 0.5 BTC
+                        ฟ้าจะสร้าง ธุรกรรมขึ้นมา ขอเรียกว่า "Tx1" ในขาเข้า UTxO ของฟ้าจะมี 1 BTC
+
+                    </p>
+
+                    <br> <!-- เว้นบรรทัด -->
+
+                    <p class="lead mb-0">
+                        ขาออกจะมี 2 Output ออกมา จากที่เห็นจะ มีเงินของฟ้าโผล่ออกมาจาก UTxO นี้จำนวน 0.5 BTC
+                        เป็นเพราะว่า ฟ้าโอนเงิน 0.5 BTC ให้กับส้ม .. พอฟ้าส่ง 0.5 BTC ให้กับส้มแล้ว ฟ้าจะได้เงินทอนให้ตัวเองกลับมา 0.5 BT
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- page 3 -->
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-1 text-white showcase-img">
+                    <img src="image/UTxO/ts2.jpg" class="img-fluid rounded">
+                </div>
+
+                <!-- Text block -->
+                <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+                    <h2>การใช้จ่ายแบบ UTxO มันเหมือนกับการใช้เงินสด</h2>
+                    <br>
+                    <p class="lead mb-0">
+                        การใช้เงินแบบ UTxO จะต้องใช้จ่ายเงินทั้งหมดออกไป แล้วจะได้เงินทอนกลับมา (แอป Wallet จะสร้าง
+                        Address สำหรับรับเงินทอนเตรียมไว้อยู่แล้ว)
+
+                    </p>
+
+                    <br> <!-- เว้นบรรทัด -->
+
+                    <p class="lead mb-0">
+                        แบบนี้เราจะเห็นว่าผลรวม UTxO ขาเข้า จะต้องเท่ากับผลรวมของ UTxO ขาออกเสมอ
+                        (กรณีตัวอย่างนี้ไม่มีค่า Fee ของจริงจะมี UTxO แตกออกไปเป็นค่า Fee ด้วยครับ)
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- page 4 -->
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-1 text-white showcase-img">
+                    <img src="image/UTxO/ts3.jpg" class="img-fluid rounded">
+                </div>
+
+                <!-- Text block -->
+                <div class="col-lg-6 order-lg-2 my-auto showcase-text">
+                    <h2>คุณสมบัติอีกอย่างของ UTxO</h2>
+                    <br>
+                    <p class="lead mb-0">
+                        UTxO จะมี Input เท่าไหร่ก็ได้ และมี Output เท่าไหร่ก็ได้ เงินโอนเข้ามา 100 Address แล้วออกมา 200
+                        Address ... หรือจะเข้ามา 5 Address ออกมา 5 Address ก็ได้
+                    </p>
+
+                    <br> <!-- เว้นบรรทัด -->
+
+                    <p class="lead mb-0">
+                        แต่ผลรวมของเงินในแต่ละ Address ทั้งขาเข้าและขาออก จะเท่ากันนะ
+                        เป็นความสามารถหลอมรวม BTC เป็นหน่วยใหญ่และแตกเป็นหน่วยย่อย ๆ ก็ได้
+
+                    </p>
+
+                    <br> <!-- เว้นบรรทัด -->
+
+                    <p class="lead mb-0">
+                        การเคลื่อนไหวของเงิน จากมุมมองคนนอกที่มองเข้ามา จะไม่รู้เลยว่าใครเป็นใคร จะเห็นว่ามีเงินจาก
+                        Address หนึ่ง โอนเงินไปที่อีก Address หนึ่ง
+                    </p>
+
+                    <br> <!-- เว้นบรรทัด -->
+
+                    <p class="lead mb-0">
+                        Address นั้นอาจเป็นของคนอื่นจริง ๆ หรือเป็นของเจ้าตัวของคนที่โอนเองก็ได้ เพราะเราสามารถสร้าง
+                        Address ใหม่ ๆ ออกมารับเงินได้เรื่อย ๆ เลยล่ะ
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <!-- Content -->
+
+    <!-- End Content -->
+
+
+
+
+    <!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>
