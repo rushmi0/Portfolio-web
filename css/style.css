@@ -14,7 +14,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Grandstander", cursive;
     color: #272323;
 }
 
@@ -29,9 +28,27 @@ body {
     color: #272323;
 }
 
-.showcase-img {
-    background-size: cover;
-    min-height: 50rem;
+
+
+.textJustify {
+    text-align: justify;
+}
+
+.top-Block {
+    width: 1200px;
+    margin: 0px auto 0px auto;
+}
+
+.sub-BloclSize {
+    width: 580px;
+    float: left;
+    padding: 10px;
+}
+
+
+.imgsize {
+    height: 300px;
+    width: 100%;
 }
 
 .showcase-text {
@@ -39,9 +56,26 @@ body {
 }
 
 
+.navbar-dark:hover {
+    color: #74EEB3;
+}
+
+.fa-instagram:hover {
+    color: #D6A6EC;
+}
+
+.fa-github:hover {
+    color: #1e2125;
+}
+
 
 .a {
     color: #272323;
+    text-decoration: none;
+}
+
+.a:hover {
+    color: #98A8F8;
 }
 
 
@@ -62,16 +96,6 @@ body {
 
 .menubar {
     background-color: #98A8F8;
-}
-
-.navbar1 {
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-}
-
-.bgGreen{
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .textJustify{
@@ -103,6 +127,10 @@ body {
 }
 
 
+#proImg{
+    text-align: center;
+
+}
 
 
 /* CSS แต่ละขนาดหน้าจอ */
