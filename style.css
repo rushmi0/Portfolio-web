@@ -1,6 +1,6 @@
 
 header {
-    background: url("../image/items/wall1.jpeg") no-repeat center center;
+    background: url("./image/items/wall1.jpeg") no-repeat center center;
     background-size: cover;
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -26,7 +26,7 @@ body {
     font-family: 'Mali', cursive;
     font-size: 5px;
     color: #272323;
-    background-image: url("../image/items/background.jpg");
+    background-image: url("./image/items/background.jpg");
 }
 
 
