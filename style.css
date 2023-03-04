@@ -29,9 +29,20 @@ body {
     background-image: url("./image/items/background.jpg");
 }
 
+.rd {
+    border-radius: 20px;
+}
 
 .mtop {
     margin-top: 130px;
+}
+
+.mtop-sm {
+    margin-top: 40px;
+}
+
+.mbot {
+    margin-bottom: 50px;
 }
 
 .rounded {
@@ -104,8 +115,6 @@ body {
 
 
 
-
-
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -129,5 +138,3 @@ body {
 #proImg{
     text-align: center;
 }
-
-
