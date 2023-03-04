@@ -8,6 +8,13 @@ header {
 }
 
 
+body {
+    font-family: 'Mali', cursive;
+    font-size: 5px;
+    color: #272323;
+    background-image: url("./image/items/background.jpg");
+}
+
 h1,
 h2,
 h3,
@@ -17,16 +24,8 @@ h6 {
     color: #272323;
 }
 
-
 html  {
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Mali', cursive;
-    font-size: 5px;
-    color: #272323;
-    background-image: url("./image/items/background.jpg");
 }
 
 .rd {
@@ -43,6 +42,10 @@ body {
 
 .mbot {
     margin-bottom: 50px;
+}
+
+.mbot-sm {
+    margin-bottom: 20px;
 }
 
 .rounded {
@@ -64,7 +67,6 @@ body {
     padding: 10px;
 }
 
-
 .imgsize {
     height: 300px;
     width: 100%;
@@ -75,7 +77,6 @@ body {
 }
 
 
-
 .fa-instagram:hover {
     color: #D6A6EC;
 }
@@ -83,7 +84,6 @@ body {
 .fa-github:hover {
     color: #1e2125;
 }
-
 
 .a {
     color: #272323;
@@ -93,7 +93,6 @@ body {
 .a:hover {
     color: #98A8F8;
 }
-
 
 .features-icons {
     padding-top: 5rem;
@@ -105,9 +104,6 @@ body {
     background-color: #98A8F8;
 }
 
-.hr-color {
-    border: 20px solid #98A8F8;
-}
 
 .textJustify{
     text-align: justify;
